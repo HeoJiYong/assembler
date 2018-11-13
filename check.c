@@ -3,7 +3,7 @@
 
 int is_Reg(char *target)
 {
-	char Reg[8][6] = {"%eax","%ecx","%edx","%ebx","%esi","%edi","%esp","%dbp"}
+	char Reg[8][6] = {"%eax","%ecx","%edx","%ebx","%esi","%edi","%esp","%dbp"};
 	int i;
 	for(int i=0;i<8;i++)
 	{

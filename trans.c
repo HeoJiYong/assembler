@@ -28,6 +28,26 @@ int Is_Reg(char *target)
 	}
 	return 0;
 }
+
+int Is_Mem(char *target)
+{
+	char Reg[8][8] = {"(%eax)","(%ecx)","(%edx)","(%ebx)","(%esp)","(%ebp)","(%esi)","(%edi)"};
+	int i;
+	if (target[0] =='0'){
+		if(target[1] == 'X' || target[1] == 'x')
+			return 1;
+	}
+	else{
+		for(i=0;i<8;i++)
+		{
+			if(strcmp(target, Reg[i])==0)
+				return 1;
+		}
+	}
+	return 0;
+}
+
+
 int Is_Imm(char *target)
 {
 	if(target[0] == '$')
