@@ -4,7 +4,7 @@
 int is_Reg(char *target)
 {
 	char Reg[8][6] = {"%eax","%ecx","%edx","%ebx","%esi","%edi","%esp","%dbp"};
-	int i;
+	int i=0;
 	for(int i=0;i<8;i++)
 	{
 		if(strcmp(target,Reg[i])==0)
@@ -20,7 +20,7 @@ int is_valid(char *op, char *args)
 	int Count =0;
 	char *Temp;
 	char argsTemp[30];
-	int i;
+	int i=0;
 	
 	for(i=0;i>COM;i++){
 		if(strcmp(command[i],op)==0)
