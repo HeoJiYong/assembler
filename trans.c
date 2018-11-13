@@ -128,21 +128,21 @@ int instr_trans(char *op, char *args, char* mcode)
 					case 1:
 						switch(set_mcode(mcode, Tokken_Log,i+1))
 						{
-							case 0: strcpy(mcode,b8);
+							case 0: strcpy(mcode,"b8");
 								break;
-							case 1: strcpy(mcode,b9);
+							case 1: strcpy(mcode,"b9");
 								break;
-							case 2: strcpy(mcode,ba);
+							case 2: strcpy(mcode,"ba");
 								break;
-							case 3: strcpy(mcode,bb);
+							case 3: strcpy(mcode,"bb");
 								break;
-							case 4: strcpy(mcode,bc);
+							case 4: strcpy(mcode,"bc");
 								break;
-							case 5: strcpy(mcode,bd);
+							case 5: strcpy(mcode,"bd");
 								break;
-							case 6: strcpy(mcode,be);
+							case 6: strcpy(mcode,"be");
 								break;
-							case 7: strcpy(mcode,bf);
+							case 7: strcpy(mcode,"bf");
 								break;
 							default:
 								break;
