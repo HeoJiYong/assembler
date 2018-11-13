@@ -83,7 +83,7 @@ int instr_trans(char *op, char *args, char* mcode)
 	char CopyString[30];
 	char *TokkenString;
 	char Tokken_Log[10][10];
-	int i;
+	int i=0;
 	int count =0;
 	
 	if(!is_valid(op,args)){

@@ -3,7 +3,7 @@
 
 int is_Reg(char *target)
 {
-	char Reg[8][6] = {"%eax","%ecx","%edx","%ebx","%esi","%edi","%esp","%dbp"}
+	char Reg[8][6] = {"%eax","%ecx","%edx","%ebx","%esi","%edi","%esp","%dbp"};
 	int i;
 	for(int i=0;i<8;i++)
 	{
@@ -42,7 +42,7 @@ int is_valid(char *op, char *args)
 			if(Temp[1] == 'X' || Temp[1] == 'x')
 				(OperandBool[0]) +=1;
 		}
-		else if (is_Rag(Temp)){
+		else if (is_Reg(Temp)){
 			(OperandBool[1])+=1;
 		}
 		else if (Temp[0] == '$'){
